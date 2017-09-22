@@ -268,7 +268,7 @@
 
             <fieldset class="with-icon  space-bottom1">
                 <span class="icon search"></span>
-                <input type="text" value='coffee' class="col12 round" oninput='state.newSearch("query", this.value)' placeholder='Search for'>
+                <input type="text" value='search for something here' class="col12 round" oninput='state.newSearch("query", this.value)' placeholder='Search for'>
             </fieldset>
 
             <fieldset class="with-icon clearfix space-bottom1">
@@ -331,7 +331,7 @@
             physical: turf.featureCollection([]),
             time: turf.featureCollection([])
         },
-        query:'coffee',
+        query:'tailor',
         queryGeocoder: function(cb){
             var query = state.locationString.replace(' ', '+');
             var queryURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'
@@ -778,7 +778,7 @@
 
     map.on('load', function(){
         
-        state.newSearch('query', 'sandwich')
+        state.newSearch('query', 'coffee')
 
         var el = document.createElement('div');
 
