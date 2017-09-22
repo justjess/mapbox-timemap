@@ -56,11 +56,11 @@
             overflow:hidden;
         }
 
-        .bg-blue{
+        .bg-purple{
             background:#4e3656;            
         }
 
-        .blue {
+        .purple {
             color:#4e3656;            
         }
 
@@ -81,11 +81,11 @@
         }
 
         #sidebar input{
-            border:1px solid rgba(56, 135, 190, 0.25);
+            border:1px solid rgba(78, 54, 86, 0.25);
         }
 
         .rounded-toggle{
-            background: rgba(56, 135, 190, 0.25);
+            background: rgba(78, 54, 86, 0.25);
         }
 
         .view{
@@ -98,7 +98,7 @@
         }
 
         .section {
-            border-bottom: 1px solid rgba(56, 135, 190, 0.25);
+            border-bottom: 1px solid rgba(78, 54, 86, 0.25);
             overflow:scroll;
         }
 
@@ -108,7 +108,7 @@
 
         .venuelisting:hover{
             cursor: pointer;
-            background: rgba(56, 135, 190, 0.1);
+            background: rgba(78, 54, 86, 0.1);
         }
         .mapboxgl-marker{
         }
@@ -128,7 +128,7 @@
         }
 
         .circle{
-            border:1px solid #006699;
+            border:1px solid #aa48ce;
             background:#4e3656;
             width:24px;
             height:24px;
@@ -197,7 +197,7 @@
         }
         .rounded-toggle *,
         .rounded-toggle *.active {
-            color:rgba(56, 135, 190, 1);
+            color:rgba(78, 54, 86, 1);
         }
 
         .truncate{
@@ -268,14 +268,14 @@
 
             <fieldset class="with-icon  space-bottom1">
                 <span class="icon search"></span>
-                <input type="text" value='search for something here' class="col12 round" oninput='state.newSearch("query", this.value)' placeholder='Search for'>
+                <input type="text" value='ice cream' class="col12 round" oninput='state.newSearch("query", this.value)' placeholder='Search for'>
             </fieldset>
 
             <fieldset class="with-icon clearfix space-bottom1">
                 <div class='button pin-topright' onclick='getLocation()'>Find me</div>
 
                 <span class="icon marker"></span>
-                <input type="text" value = 'Mediridian Hill Park, Washington, DC' id='geocoder' class="col12 round" oninput='state.newSearch("locationString", this.value)' placeholder='Near'>
+                <input type="text" value = 'Meridian Hill Park, Washington, DC' id='geocoder' class="col12 round" oninput='state.newSearch("locationString", this.value)' placeholder='Near'>
             </fieldset>
               <div class='pad1 geocoder z100 pin-top'></div>
             <div class='small space-top1'>VIA</div>
@@ -313,7 +313,7 @@
         startingPosition:[-77.035713, 38.920822],
         mode:'walking',
         locationString:'washington',
-        timeViewZoom:12,
+        timeViewZoom:13,
         throttleDuration: 500,
         timeMarkers:[],
         timeLabel:undefined,
@@ -778,7 +778,7 @@
 
     map.on('load', function(){
         
-        state.newSearch('query', 'coffee')
+        state.newSearch('query', 'ice cream')
 
         var el = document.createElement('div');
 
@@ -956,7 +956,7 @@
                         "property": "size",
                         "type": "categorical",
                         "stops": [
-                            ['minor', '#4897ce'],
+                            ['minor', '#aa48ce'],
                             ['major', '#4e3656']
                         ]
                     },
