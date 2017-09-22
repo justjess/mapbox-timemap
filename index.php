@@ -57,19 +57,19 @@
         }
 
         .bg-blue{
-            background:#3887be;            
+            background:#4e3656;            
         }
 
         .blue {
-            color:#3887be;            
+            color:#4e3656;            
         }
 
 
         #sidebar{
             background: rgba(255,255,255,0.9);
             height:100%;
-            border-left:0.25px solid #3887be;
-            color:#3887be;
+            border-left:0.25px solid #4e3656;
+            color:#4e3656;
             position:absolute;
             right:0;
             width:300px;
@@ -129,7 +129,7 @@
 
         .circle{
             border:1px solid #006699;
-            background:#3887be;
+            background:#4e3656;
             width:24px;
             height:24px;
             margin:2px;
@@ -240,7 +240,7 @@
             #sidebar{
                 height:200px;
                 border-left:none;
-                border-top:0.25px solid #3887be;
+                border-top:0.25px solid #4e3656;
                 position:absolute;
                 width:100%;
                 left:0;
@@ -313,7 +313,7 @@
         startingPosition:[-77.035713, 38.920822],
         mode:'walking',
         locationString:'washington',
-        timeViewZoom:13,
+        timeViewZoom:10,
         throttleDuration: 500,
         timeMarkers:[],
         timeLabel:undefined,
@@ -630,7 +630,7 @@
 
                 d3.select('.timelabel .icon')
                     .attr('class', function(){
-                        return 'icon blue '+ state.baseIconEquivalent[state.mode]
+                        return 'icon purple '+ state.baseIconEquivalent[state.mode]
                     })
             }
 
@@ -839,7 +839,7 @@
                     'text-keep-upright': false
                 },
                 'paint':{
-                    'text-color': '#3887be',
+                    'text-color': '#4e3656',
                     'text-halo-color':'hsl(55, 11%, 96%)',
                     'text-halo-width':3
                 }
@@ -853,7 +853,7 @@
                         'base':1,
                         'stops':[[10,1],[16,5]]
                     },
-                    'line-color': '#3887be'
+                    'line-color': '#4e3656'
                 }
             }, 'cover')
             .addLayer({
@@ -865,7 +865,7 @@
                     'line-cap':'round'
                 },
                 'paint':{
-                    'line-color':'#4897ce',
+                    'line-color':'#4e3656',
                     'line-dasharray':[0,6],
                     'line-width':{
                         'base':1,
@@ -887,7 +887,7 @@
                         'type': 'exponential',
                         'base':0.95,
                         "stops": [
-                            [-3, '#3887be'],
+                            [-3, '#4e3656'],
                             [15, '#fff'],
                         ]
                     },
@@ -914,7 +914,7 @@
                         'type': 'exponential',
                         'base':0.99,
                         "stops": [
-                            [0, '#3887be'],
+                            [0, '#4e3656'],
                             [300, '#fff']
                         ]
                     },
@@ -957,7 +957,7 @@
                         "type": "categorical",
                         "stops": [
                             ['minor', '#4897ce'],
-                            ['major', '#3887be']
+                            ['major', '#4e3656']
                         ]
                     },
                     'text-opacity':1,
@@ -1004,7 +1004,7 @@
                     }
                 },
                 'paint':{
-                    'text-color':'#333',
+                    'text-color':'#000',
                     'text-halo-color':'#fff',
                     'text-halo-width':2,
                     'text-opacity':0,
@@ -1022,7 +1022,7 @@
                 'paint':{
                     'circle-opacity':0,
                     'circle-stroke-opacity':0,
-                    'circle-color': '#3887be',
+                    'circle-color': '#4e3656',
                     'circle-stroke-color':'#fff',
                     'circle-stroke-width':{
                         'base':1,
@@ -1048,7 +1048,7 @@
                 },
                 'paint':{
                     'circle-color':'#fff',
-                    'circle-stroke-color':'#3887be',
+                    'circle-stroke-color':'#4e3656',
                     'circle-stroke-width':3,
                     'circle-radius':6
                 }
