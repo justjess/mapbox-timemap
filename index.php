@@ -275,7 +275,7 @@
                 <div class='button pin-topright' onclick='getLocation()'>Find me</div>
 
                 <span class="icon marker"></span>
-                <input type="text" value = '1300 Clifton St NW' id='geocoder' class="col12 round" oninput='state.newSearch("locationString", this.value)' placeholder='Near'>
+                <input type="text" value = 'Mediridian Hill Park, Washington, DC' id='geocoder' class="col12 round" oninput='state.newSearch("locationString", this.value)' placeholder='Near'>
             </fieldset>
               <div class='pad1 geocoder z100 pin-top'></div>
             <div class='small space-top1'>VIA</div>
