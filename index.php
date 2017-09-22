@@ -313,7 +313,7 @@
         startingPosition:[-77.035713, 38.920822],
         mode:'walking',
         locationString:'washington',
-        timeViewZoom:10,
+        timeViewZoom:12,
         throttleDuration: 500,
         timeMarkers:[],
         timeLabel:undefined,
