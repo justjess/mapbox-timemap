@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>time map</title>
+    <title>Jess' fun with maps yay yay yay</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.0/mapbox-gl.css' rel='stylesheet' />
@@ -268,14 +268,14 @@
 
             <fieldset class="with-icon  space-bottom1">
                 <span class="icon search"></span>
-                <input type="text" value='sandwich' class="col12 round" oninput='state.newSearch("query", this.value)' placeholder='Search for'>
+                <input type="text" value='coffee' class="col12 round" oninput='state.newSearch("query", this.value)' placeholder='Search for'>
             </fieldset>
 
             <fieldset class="with-icon clearfix space-bottom1">
                 <div class='button pin-topright' onclick='getLocation()'>Find me</div>
 
                 <span class="icon marker"></span>
-                <input type="text" value = '1300 1st ave seattle' id='geocoder' class="col12 round" oninput='state.newSearch("locationString", this.value)' placeholder='Near'>
+                <input type="text" value = '1300 Clifton St NW' id='geocoder' class="col12 round" oninput='state.newSearch("locationString", this.value)' placeholder='Near'>
             </fieldset>
               <div class='pad1 geocoder z100 pin-top'></div>
             <div class='small space-top1'>VIA</div>
@@ -310,9 +310,9 @@
     var state = {
         freePan: true,
         sidebarMode: 'query',
-        startingPosition:[-122.337856, 47.607294],
+        startingPosition:[-77.035713, 38.920822],
         mode:'walking',
-        locationString:'seattle',
+        locationString:'washington',
         timeViewZoom:13,
         throttleDuration: 500,
         timeMarkers:[],
@@ -331,7 +331,7 @@
             physical: turf.featureCollection([]),
             time: turf.featureCollection([])
         },
-        query:'sandwich',
+        query:'coffee',
         queryGeocoder: function(cb){
             var query = state.locationString.replace(' ', '+');
             var queryURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'
