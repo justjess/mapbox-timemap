@@ -306,7 +306,9 @@
 <script>
 
     mapboxgl.accessToken = 'pk.eyJ1IjoicGV0ZXJxbGl1IiwiYSI6ImpvZmV0UEEifQ._D4bRmVcGfJvo1wjuOpA1g';
-
+    
+    // @TODO Consider loading map with static locations, then allow search to extend map results
+    
     var state = {
         freePan: true,
         sidebarMode: 'query',
