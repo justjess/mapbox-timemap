@@ -13,8 +13,6 @@
     <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
-
-
     <style>
 
 
@@ -290,7 +288,7 @@
     
     var state = {
         freePan: true,
-        sidebarMode: 'query',
+        //sidebarMode: 'query',
         startingPosition:[-77.035713, 38.920822],
         mode:'walking',
         locationString:'washington',
@@ -759,7 +757,7 @@
 
     map.on('load', function(){
         
-        state.newSearch('query', 'ice cream')
+        //state.newSearch('query', 'tailor')
 
         var el = document.createElement('div');
 
